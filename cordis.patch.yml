@@ -1,9 +1,11 @@
 # dsh-explorer bundle patch (shipped inside the package).
-# This is the layer that `dsh plugin --profile web add` applies automatically,
-# so a friend installs the plugin with one command and no manual patch edits.
 #
-# `roots` below is the AUTHOR's workspace sample — override it in your own
-# profile `cordis.patch.yml` (see README) with your own directory, e.g.:
+# This is the layer `dsh plugin --profile web add` applies automatically, so a
+# user installs the plugin with one command and no manual patch edits.
+#
+# `roots` below is a SAMPLE — override it in your own profile `cordis.patch.yml`
+# with your real workspace (see README), e.g.:
+#
 #   - id: explorer
 #     config:
 #       roots:
@@ -13,4 +15,4 @@
       name: '@zrsio4-y/dsh-explorer'
       config:
         roots:
-          - 'G:\KIMI'
+          - 'D:\your-workspace'
