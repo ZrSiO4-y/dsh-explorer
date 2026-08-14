@@ -1,6 +1,6 @@
 {
   "name": "@zrsio4-y/dsh-explorer",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "VS Code-style file explorer plugin for the dsh web GUI: file panel beside the sidebar, multi-tab preview panel (code/images/PDF/audio/video/Markdown/CSV/Excel/Word/zip), filename search, sort/filter, copy-paste, swap sides and drag-resize — zero patches to official packages",
   "type": "module",
   "main": "lib/index.js",
