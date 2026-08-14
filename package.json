@@ -1,0 +1,46 @@
+{
+  "name": "@zrsio4-y/dsh-explorer",
+  "version": "0.8.0",
+  "description": "VS Code-style file explorer plugin for the dsh web GUI: file panel beside the sidebar, multi-tab preview panel (code/images/PDF/audio/video/Markdown/CSV/Excel/Word/zip), filename search, sort/filter, copy-paste, swap sides and drag-resize — zero patches to official packages",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZrSiO4-y/dsh-explorer.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-primitives",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ],
+      "platform": "web"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1",
+    "shiki": "^4.0.0",
+    "micromark": "^4.0.0",
+    "xlsx": "^0.18.5",
+    "mammoth": "^1.9.1",
+    "jszip": "^3.10.1"
+  },
+  "license": "MIT"
+}
+

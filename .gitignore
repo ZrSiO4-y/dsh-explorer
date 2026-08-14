@@ -1,0 +1,11 @@
+# dependencies
+node_modules/
+
+# build artifacts / packages
+*.tgz
+*.tar.gz
+
+# logs & OS noise
+*.log
+.DS_Store
+Thumbs.db
